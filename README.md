@@ -18,7 +18,7 @@ Phy-FusionNet is an innovative memory-augmented Transformer architecture designe
 
 Please follow the steps below to set up your local environment to run the code.  
 **1\. Clone the Repository**  
-git clone [\[https://github.com/your-username/Phy-FusionNet.git\](https://github.com/your-username/Phy-FusionNet.git)  ](https://github.com/AffectiveComputingXJTLU/Phy-FusionNet)
+git clone [https://github.com/AffectiveComputingXJTLU/Phy\-FusionNet](https://github.com/AffectiveComputingXJTLU/Phy-FusionNet)
 cd Phy-FusionNet
 
 **2\. Create and Activate a Virtual Environment (Recommended)**  
