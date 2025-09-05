@@ -1,0 +1,131 @@
+
+====================================================================================================
+[2025-09-05T05:34:22.255426] Experiment logging started. Console tee -> experiment_output/experiment_console.log
+====================================================================================================
+
+Loading and processing data...
+Filtered for relevant categories: 3396285 rows remaining from 3396285
+After dropping NaNs: 59918 rows remaining
+Splitting data into train, validation, and test sets...
+Standardizing features...
+Applying SMOTE to the training set...
+Class distribution after SMOTE:
+1    6472
+0    6472
+6    6472
+5    6472
+2    6472
+4    6472
+3    6472
+Name: count, dtype: int64
+Generating quadratic polynomial features...
+Feature dimension after polynomial expansion: 19305
+Train loader: 177 batches of size 256
+Validation loader: 36 batches
+Test loader: 36 batches
+使用设备: cuda
+
+--- 开始 Optuna 超参数优化 ---
+
+Optuna 优化完成。
+最佳 Trial: 7, 最佳验证 F1-Score: 0.9844
+最佳超参数: {'embed_dim': 128, 'memory_dim': 128, 'num_heads': 4, 'num_layers': 1, 'dropout': 0.2911740650167767, 'learning_rate': 7.148510793512978e-05, 'weight_decay': 4.325432427964558e-05, 'focal_gamma': 2.721461166512687}
+
+--- 开始使用最佳超参数进行最终模型训练 ---
+/usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:62: UserWarning:
+
+The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+
+Epoch 1/100 | Train Loss: 1.1932 Acc: 0.3820 F1: 0.3847 | Val Loss: 0.7188 Acc: 0.5447 F1: 0.5509
+  New best validation F1: 0.5509. Model saved.
+Epoch 2/100 | Train Loss: 0.5227 Acc: 0.6513 F1: 0.6495 | Val Loss: 0.4118 Acc: 0.7616 F1: 0.7633
+  New best validation F1: 0.7633. Model saved.
+Epoch 3/100 | Train Loss: 0.2953 Acc: 0.7741 F1: 0.7739 | Val Loss: 0.1788 Acc: 0.8374 F1: 0.8386
+  New best validation F1: 0.8386. Model saved.
+Epoch 4/100 | Train Loss: 0.1711 Acc: 0.8359 F1: 0.8358 | Val Loss: 0.1191 Acc: 0.8890 F1: 0.8879
+  New best validation F1: 0.8879. Model saved.
+Epoch 5/100 | Train Loss: 0.1459 Acc: 0.8729 F1: 0.8728 | Val Loss: 0.0903 Acc: 0.9207 F1: 0.9204
+  New best validation F1: 0.9204. Model saved.
+Epoch 6/100 | Train Loss: 0.1042 Acc: 0.8957 F1: 0.8957 | Val Loss: 0.2600 Acc: 0.9331 F1: 0.9344
+  New best validation F1: 0.9344. Model saved.
+Epoch 7/100 | Train Loss: 0.0910 Acc: 0.9083 F1: 0.9083 | Val Loss: 0.0734 Acc: 0.9376 F1: 0.9370
+  New best validation F1: 0.9370. Model saved.
+Epoch 8/100 | Train Loss: 0.0817 Acc: 0.9193 F1: 0.9192 | Val Loss: 0.0979 Acc: 0.9488 F1: 0.9476
+  New best validation F1: 0.9476. Model saved.
+Epoch 9/100 | Train Loss: 0.0751 Acc: 0.9288 F1: 0.9287 | Val Loss: 0.0890 Acc: 0.9525 F1: 0.9512
+  New best validation F1: 0.9512. Model saved.
+Epoch 10/100 | Train Loss: 0.0690 Acc: 0.9351 F1: 0.9349 | Val Loss: 0.0755 Acc: 0.9601 F1: 0.9588
+  New best validation F1: 0.9588. Model saved.
+Epoch 11/100 | Train Loss: 0.0612 Acc: 0.9419 F1: 0.9418 | Val Loss: 0.0652 Acc: 0.9644 F1: 0.9639
+  New best validation F1: 0.9639. Model saved.
+Epoch 12/100 | Train Loss: 0.0557 Acc: 0.9493 F1: 0.9492 | Val Loss: 0.0581 Acc: 0.9688 F1: 0.9681
+  New best validation F1: 0.9681. Model saved.
+Epoch 13/100 | Train Loss: 0.0498 Acc: 0.9566 F1: 0.9565 | Val Loss: 0.0510 Acc: 0.9715 F1: 0.9710
+  New best validation F1: 0.9710. Model saved.
+Epoch 14/100 | Train Loss: 0.0451 Acc: 0.9620 F1: 0.9619 | Val Loss: 0.0473 Acc: 0.9742 F1: 0.9738
+  New best validation F1: 0.9738. Model saved.
+Epoch 15/100 | Train Loss: 0.0403 Acc: 0.9681 F1: 0.9680 | Val Loss: 0.0418 Acc: 0.9769 F1: 0.9765
+  New best validation F1: 0.9765. Model saved.
+Epoch 16/100 | Train Loss: 0.0368 Acc: 0.9725 F1: 0.9724 | Val Loss: 0.0390 Acc: 0.9788 F1: 0.9784
+  New best validation F1: 0.9784. Model saved.
+Epoch 17/100 | Train Loss: 0.0331 Acc: 0.9764 F1: 0.9763 | Val Loss: 0.0351 Acc: 0.9806 F1: 0.9801
+  New best validation F1: 0.9801. Model saved.
+Epoch 18/100 | Train Loss: 0.0305 Acc: 0.9799 F1: 0.9798 | Val Loss: 0.0333 Acc: 0.9815 F1: 0.9811
+  New best validation F1: 0.9811. Model saved.
+Epoch 19/100 | Train Loss: 0.0287 Acc: 0.9811 F1: 0.9810 | Val Loss: 0.0315 Acc: 0.9824 F1: 0.9821
+  New best validation F1: 0.9821. Model saved.
+Epoch 20/100 | Train Loss: 0.0271 Acc: 0.9830 F1: 0.9829 | Val Loss: 0.0319 Acc: 0.9819 F1: 0.9816
+  Validation F1 did not improve for 1/15 epochs.
+Epoch 21/100 | Train Loss: 0.0260 Acc: 0.9845 F1: 0.9844 | Val Loss: 0.0308 Acc: 0.9822 F1: 0.9819
+  Validation F1 did not improve for 2/15 epochs.
+Epoch 22/100 | Train Loss: 0.0249 Acc: 0.9859 F1: 0.9858 | Val Loss: 0.0299 Acc: 0.9820 F1: 0.9817
+  Validation F1 did not improve for 3/15 epochs.
+Epoch 23/100 | Train Loss: 0.0238 Acc: 0.9868 F1: 0.9867 | Val Loss: 0.0295 Acc: 0.9821 F1: 0.9818
+  Validation F1 did not improve for 4/15 epochs.
+Epoch 24/100 | Train Loss: 0.0225 Acc: 0.9881 F1: 0.9880 | Val Loss: 0.0290 Acc: 0.9819 F1: 0.9816
+  Validation F1 did not improve for 5/15 epochs.
+Epoch 25/100 | Train Loss: 0.0219 Acc: 0.9890 F1: 0.9889 | Val Loss: 0.0288 Acc: 0.9824 F1: 0.9820
+  Validation F1 did not improve for 6/15 epochs.
+Epoch 26/100 | Train Loss: 0.0207 Acc: 0.9901 F1: 0.9900 | Val Loss: 0.0285 Acc: 0.9822 F1: 0.9819
+  Validation F1 did not improve for 7/15 epochs.
+Epoch 27/100 | Train Loss: 0.0199 Acc: 0.9912 F1: 0.9911 | Val Loss: 0.0286 Acc: 0.9820 F1: 0.9818
+  Validation F1 did not improve for 8/15 epochs.
+Epoch 28/100 | Train Loss: 0.0190 Acc: 0.9919 F1: 0.9918 | Val Loss: 0.0281 Acc: 0.9817 F1: 0.9814
+  Validation F1 did not improve for 9/15 epochs.
+Epoch 29/100 | Train Loss: 0.0185 Acc: 0.9925 F1: 0.9924 | Val Loss: 0.0283 Acc: 0.9822 F1: 0.9819
+  Validation F1 did not improve for 10/15 epochs.
+Epoch 30/100 | Train Loss: 0.0178 Acc: 0.9930 F1: 0.9929 | Val Loss: 0.0280 Acc: 0.9824 F1: 0.9820
+  Validation F1 did not improve for 11/15 epochs.
+Epoch 31/100 | Train Loss: 0.0171 Acc: 0.9936 F1: 0.9935 | Val Loss: 0.0278 Acc: 0.9819 F1: 0.9816
+  Validation F1 did not improve for 12/15 epochs.
+Epoch 32/100 | Train Loss: 0.0165 Acc: 0.9941 F1: 0.9940 | Val Loss: 0.0281 Acc: 0.9821 F1: 0.9818
+  Validation F1 did not improve for 13/15 epochs.
+Epoch 33/100 | Train Loss: 0.0160 Acc: 0.9945 F1: 0.9944 | Val Loss: 0.0279 Acc: 0.9824 F1: 0.9820
+  Validation F1 did not improve for 14/15 epochs.
+Epoch 34/100 | Train Loss: 0.0155 Acc: 0.9950 F1: 0.9949 | Val Loss: 0.0282 Acc: 0.9822 F1: 0.9819
+  Validation F1 did not improve for 15/15 epochs.
+  Early stopping triggered.
+
+--- 在测试集上评估最终模型 ---
+Test Loss: 0.0215 | Test Accuracy: 98.18% | Test F1-Score (Macro): 0.9784
+
+Classification Report (Test Set):
+              precision    recall  f1-score   support
+
+          SD     0.9915    0.9713    0.9813      1326
+          FD     0.9751    0.9831    0.9791      1360
+          DD     0.9488    0.9628    0.9557       887
+          HD     0.9834    0.9892    0.9863      1387
+         SAD     0.9890    0.9911    0.9900      1353
+          AD     0.9702    0.9783    0.9742      1380
+          ND     0.9946    0.9900    0.9923      1295
+
+    accuracy                         0.9818      8988
+   macro avg     0.9784    0.9808    0.9798      8988
+weighted avg     0.9820    0.9818    0.9818      8988
+
+Confusion matrix saved to experiment_output/confusion_matrix.png
+
+--- 脚本执行完毕 ---
+所有输出, 日志和模型都保存在 'experiment_output' 目录下。
+[ExperimentLogger] Summary saved -> experiment_output/experiment_summary.json

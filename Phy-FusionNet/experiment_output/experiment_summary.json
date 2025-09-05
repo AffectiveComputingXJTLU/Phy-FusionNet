@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-09-05T05:44:25.624735",
+  "seed": 42,
+  "artifacts": {
+    "final_model": "experiment_output/final_best_model.pth",
+    "confusion_matrix": "experiment_output/confusion_matrix.png"
+  },
+  "config": {
+    "loss_function": {
+      "type": "FocalLoss",
+      "alpha": 1,
+      "gamma": 2
+    }
+  },
+  "software": {
+    "python": "3.11.13 (main, Jun  4 2025, 08:57:29) [GCC 11.4.0]",
+    "pandas": "2.2.3",
+    "numpy": "1.26.4",
+    "torch": "2.6.0+cu124",
+    "optuna": "4.4.0"
+  },
+  "hardware": {
+    "platform": "Linux-6.6.56+-x86_64-with-glibc2.35",
+    "device": "cuda"
+  },
+  "notes": [],
+  "optuna": {
+    "best_params": {
+      "embed_dim": 128,
+      "memory_dim": 128,
+      "num_heads": 4,
+      "num_layers": 1,
+      "dropout": 0.2911740650167767,
+      "learning_rate": 7.148510793512978e-05,
+      "weight_decay": 4.325432427964558e-05,
+      "focal_gamma": 2.721461166512687
+    },
+    "best_val_f1": 0.9844410074210533
+  },
+  "runtime_sec": 1997.843
+}
