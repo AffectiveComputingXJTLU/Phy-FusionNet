@@ -25,14 +25,14 @@ cd Phy-FusionNet
 
 **2\. Create and Activate a Virtual Environment (Recommended)**
 ```script
-python \-m venv venv  
-source venv/bin/activate  \# On Windows, use \`venv\\Scripts\\activate\`
+python -m venv venv  
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
 **3\. Install Dependencies**
 The required dependencies for the project are listed in the requirements.txt file.  
 ```script
-pip install \-r requirements.txt
+pip install -r requirements.txt
 ```
 
 Key dependencies include:
