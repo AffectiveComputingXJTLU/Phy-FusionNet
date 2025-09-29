@@ -56,7 +56,9 @@ Please place your preprocessed dataset file (e.g., merged\_data.csv) in the root
 ### **2\. Run Training and Evaluation**
 
 Simply run the main script to start the entire workflow, which includes data processing, hyperparameter optimization, final model training, and evaluation.  
-python phy\_fusionnet\_train.py
+```script
+python phy_fusionnet_train.py
+```
 
 The script will perform the following actions:
 
