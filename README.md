@@ -2,7 +2,8 @@
 
 This repository contains the official PyTorch implementation of the paper **"Phy-FusionNet: A Memory-Augmented Transformer for Multimodal Emotion Recognition with Periodicity and Contextual Attention"**.  
 
-**Note:** This paper has been published by IEEE Transactions on Affective Computing (TAFFC). See our paper here: [https://doi.org/10.1109/TAFFC.2025.3609046](https://doi.org/10.1109/TAFFC.2025.3609046).  
+**Note:** This paper has been published by IEEE Transactions on Affective Computing (TAFFC). 
+See our paper here: [https://doi.org/10.1109/TAFFC.2025.3609046](https://doi.org/10.1109/TAFFC.2025.3609046).  
 
 Phy-FusionNet is an innovative memory-augmented Transformer architecture designed for multimodal emotion recognition from physiological signals. It achieves state-of-the-art performance on multiple public datasets by effectively capturing long-term dependencies and inherent periodic patterns.
 
