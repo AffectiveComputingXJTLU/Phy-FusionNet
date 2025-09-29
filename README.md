@@ -15,22 +15,25 @@ Phy-FusionNet is an innovative memory-augmented Transformer architecture designe
 * **Automated Hyperparameter Optimization**: Built-in integration with the [Optuna](https://optuna.org/) framework for automatic Bayesian hyperparameter search to find the optimal model configuration and training strategy.
 
 ## **Environment Setup**
-
 Please follow the steps below to set up your local environment to run the code.  
+
 **1\. Clone the Repository**  
 ```script
 git clone https://github.com/AffectiveComputingXJTLU/Phy-FusionNet
-cd Phy-FusionNet/script
-python phy_fusionnet_train.py
+cd Phy-FusionNet
 ```
 
-**2\. Create and Activate a Virtual Environment (Recommended)**  
+**2\. Create and Activate a Virtual Environment (Recommended)**
+```script
 python \-m venv venv  
 source venv/bin/activate  \# On Windows, use \`venv\\Scripts\\activate\`
+```
 
-3\. Install Dependencies  
+**3\. Install Dependencies**
 The required dependencies for the project are listed in the requirements.txt file.  
+```script
 pip install \-r requirements.txt
+```
 
 Key dependencies include:
 
