@@ -85,8 +85,9 @@ Our model achieves State-of-the-Art (SOTA) performance on five major public data
 The model demonstrates stable performance across various emotion classes, with F1-Score differences typically below 2.5%. This indicates robust recognition capabilities, even for subtle or confusable emotions.
 
 ## **How to Cite**
-```bibtex
 If you use this project or our paper in your research, please cite our work:  
+
+```bibtex
 @ARTICLE{11173946,
   author={Wu, Tianyi and Purwanto, Erick and Huang, Yongrun and Yang, Su},
   journal={IEEE Transactions on Affective Computing}, 
