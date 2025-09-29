@@ -88,14 +88,23 @@ The model demonstrates stable performance across various emotion classes, with F
 
 If you use this project or our paper in your research, please cite our work:  
 @ARTICLE{11173946,
+
   author={Wu, Tianyi and Purwanto, Erick and Huang, Yongrun and Yang, Su},
+  
   journal={IEEE Transactions on Affective Computing}, 
+  
   title={Phy-FusionNet: A Memory-Augmented Transformer for Multimodal Emotion Recognition With Periodicity and Contextual Attention}, 
+  
   year={2025},
+  
   volume={},
+  
   number={},
+  
   pages={1-13},
+  
   keywords={Transformers;Emotion recognition;Brain modeling;Physiology;Adaptation models;Computational modeling;Encoding;Data models;Context modeling;Attention mechanisms;Emotion recognition;multimodal fusion;transformer networks;attention mechanisms;memory-augmented neural networks;physiological signals;affective computing},
+  
   doi={10.1109/TAFFC.2025.3609046}}
 
 ## **License**
